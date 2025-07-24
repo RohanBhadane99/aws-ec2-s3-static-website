@@ -97,7 +97,19 @@ sudo nano index.html
 
 **Sample `index.html`:**
 
-```<!DOCTYPE html>
+```
+That happens because you're trying to use a code block **incorrectly inside Markdown**.
+
+---
+
+### ✅ Correct Way to Include HTML Code in `README.md`
+
+You should **start and end** the code block with triple backticks ``` and specify `html` like this:
+
+<pre>
+<code>
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -132,6 +144,7 @@ sudo nano index.html
     </video>
 </body>
 </html>
+
 ```
 
 > 📌 Replace the `src` URL with your copied S3 image URL.
