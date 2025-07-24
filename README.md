@@ -1,5 +1,5 @@
 HEAD
-# aws-ec2-s3-static-websit
+# aws-ec2-s3-static-website
 
 # 📦 Hosting a Static Website with EC2 and S3
 
@@ -45,6 +45,7 @@ sudo chmod 755 /var/www/html
 cd /var/www/html
 sudo touch index.html
 sudo nano index.html
+
 ```
 
 ---
@@ -73,7 +74,9 @@ sudo nano index.html
             "Resource": "arn:aws:s3:::my-rick-roll/*"
         }
     ]
-}```
+}
+
+```
 
 > 💡 You can also use the [AWS Policy Generator](https://awspolicygen.s3.amazonaws.com/policygen.html) to create a custom policy.
 
@@ -108,7 +111,7 @@ You should **start and end** the code block with triple backticks ``` and specif
 
 <pre>
 <code>
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -145,6 +148,7 @@ You should **start and end** the code block with triple backticks ``` and specif
 </body>
 </html>
 
+
 ```
 
 > 📌 Replace the `src` URL with your copied S3 image URL.
@@ -168,6 +172,6 @@ This guide walks you through:
 
 * Setting up an EC2 instance with Apache web server
 * Hosting a static HTML page
-* Storing and serving an image from an Amazon S3 bucket
-* Integrating the image into your website via its public S3 URL
+* Storing and serving an video from an Amazon S3 bucket
+* Integrating the video into your website via its public S3 URL
 b90e3af (Updated index.html before pulling)
